@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_view_bg"
+    tools:showIn="@layout/activity_main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/txtIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            tools:text="F"
+            android:textSize="24sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/circle_bg"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/txtUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Facebook"
+            android:textSize="18sp"
+            android:textColor="@color/darkerGray"
+            android:layout_toStartOf="@id/txtDate"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/txtIcon"
+            android:layout_alignTop="@id/txtIcon"/>
+
+        <TextView
+            android:id="@+id/txtSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Facebook Facebook Facebook Facebook Facebook"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:textSize="16sp"
+            android:textColor="@color/darkerGray"
+            android:layout_below="@id/txtUser"
+            android:layout_alignStart="@id/txtUser"/>
+
+
+        <TextView
+            android:id="@+id/txtPreview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Preview Preview Preview Preview Preview Preview"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:textSize="16sp"
+            android:textColor="@color/darkerGray"
+            android:layout_marginEnd="24dp"
+            android:layout_below="@id/txtSubject"
+            android:layout_alignStart="@id/txtSubject"/>
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="20 Nov"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:textColor="@color/darkerGray"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:id="@+id/imgStar"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_baseline_star_border_24"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
