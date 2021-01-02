@@ -25,8 +25,7 @@ import br.com.liebersonsantos.masteringrecyclerview.R
 import br.com.liebersonsantos.masteringrecyclerview.model.Email
 import kotlinx.android.synthetic.main.email_item.view.*
 
-class EmailAdapter(val emails: MutableList<Email>) :
-    RecyclerView.Adapter<EmailAdapter.EmailViewHolder>() {
+class EmailAdapter(val emails: MutableList<Email>) : RecyclerView.Adapter<EmailAdapter.EmailViewHolder>() {
     var onItemClick: ((Int) -> Unit)? = null
     var onItemLongClick: ((Int) -> Unit)? = null
     val selectedItems =
